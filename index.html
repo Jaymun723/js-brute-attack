@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Brute</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      textarea {
+        min-height: 100px;
+        min-width: 400px;
+      }
+
+      input {
+        min-width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- This is a  demo file -->
+    <label for="url-attack">Url to attack</label>
+    <input name="url-attack" id="input-url" type="text" placeholder="url to attack" />
+    <label for="url-password">Url to a password file.</label>
+    <input name="url-password" id="input-password" type="text" placeholder="url to a file" /> <br />
+    <label for="schema">Schema</label> <textarea name="schema" id="textarea-schema"></textarea>
+    <button id="button-launch">Launch attack</button>
+    <pre id="div-output"></pre>
+    <script src="./dist/lib.js"></script>
+    <script src="./dist/main.js"></script>
+  </body>
+</html>
